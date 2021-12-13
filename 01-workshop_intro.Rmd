@@ -27,9 +27,6 @@ library(tidyverse)
 library(xaringan)
 library(magick)
 library(icons)
-library(xaringanExtra)
-
-xaringanExtra::use_share_again() # need to get the slide button on html view
 
 opts_chunk$set(
   echo = FALSE,
@@ -449,6 +446,96 @@ Warning messages:
 5: package ‘dplyr’ was built under R version 4.0.3 
 6: package ‘stringr’ was built under R version 4.0.3 
 ```
+
+# Working Directory
+
+If you tell R/R Studio to look for a file, or save a plot, it will (by default) look in a place called the working
+directory (wd) </br>
+
+</br> <img class="center" src="img/session02/working-directory.PNG"/>
+
+</br> You can (usually) see your working directory path at the top of the console panel...</br>
+
+</br> ... it often defaults to the "Documents" folder. </br>
+
+</br> This example is ~/workshop-r/ and ~ is in Documents
+
+---
+
+# Browsing in RStudio
+
+If you click the arrow next to the file pathway ~/workshop-r/
+
+</br> <img src="img/session02/working-directory.PNG"/>
+
+it will return you to the working directory and you can see all the files in that folder:
+
+</br> <img class="center" src="img/session02/wd-files.PNG"/>
+
+---
+
+class: center, middle
+
+# Organisation
+
+</br> <img class="center"src="img/session02/cognitive-load.PNG" width="15%"/>
+
+</br> Sooner or later (but probably sooner) you will wish to change where files are saved (and loaded from). </br>
+
+</br> Being organised is key:</br>
+
+</br> Reduces cognitive load (and frustration).
+
+.footnote[Artwork by @allison_horst]
+
+---
+
+# RStudio Projects
+
+</br> make it *far easier* for you to: </br>
+
+</br> 1) .blue[*Organise*] files and workflow </br>
+</br> 2) .blue[*Switch*] between projects </br>
+</br> 3) .blue[*Share*] scripts / projects with others </br>
+
+
+</br> .green[(when collaborating or getting assistance)] </br>
+
+</br> Recommended for all tasks (large or small).
+
+---
+
+# Create a project
+
+</br> File `r icons::fontawesome("arrow-right")` New Project `r icons::fontawesome("arrow-right")` New Directory `r icons::fontawesome("arrow-right")` New Project
+
+</br> Name the directory "workshop-r" </br>
+</br> Create as a subdirectory somewhere useful for you </br>
+</br> Create project! </br>
+
+---
+
+# RStudio Projects
+
+Now your working directory is your project directory:
+
+</br> <img class="center" src="img/session02/workshop-r-project.PNG"/>
+
+</br> R will save and load files from here (by default). </br>
+</br> If starting another project, repeat this process.
+
+---
+
+class: middle, center
+
+# R Studio Projects
+
+Switching between projects is simple
+
+</br> <img class="center" src="img/session02/project-list.PNG"/>
+
+---
+
 
 ---
 

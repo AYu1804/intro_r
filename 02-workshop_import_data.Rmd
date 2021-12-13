@@ -25,9 +25,6 @@ output:
 library(knitr)
 library(tidyverse)
 library(xaringan)
-library(xaringanExtra)
-
-xaringanExtra::use_share_again() # need to get the slide button on html view
 
 opts_chunk$set(
   echo = FALSE,
@@ -39,6 +36,11 @@ opts_chunk$set(
   dpi = 300,
   dev.args = list(type = "cairo")
 )
+
+# Load data -----------------------------------
+beds_data <- read_csv(url("https://raw.githubusercontent.com/nhs-r-community/intro_r_data/main/beds_data.csv"), col_types = cols(date = col_date(format = "%d/%m/%Y")), 
+    skip = 3)
+
 ```
 
 class: title-slide, left, bottom
@@ -155,6 +157,64 @@ Where just one line copied:
 
 ]
 
+---
+
+# Start a new script
+
+File/New script or shortcut keys <kbd>Ctrl + Shift + N </kbd>
+
+.left-column[
+Load the data
+beds_data.csv
+]
+
+.right-column[
+<img class="center" src="img/session06/new-script.PNG"/>
+]
+
+---
+
+# Less friendly csvs
+
+<img class="center" src="img/session06/beds-data-wizard.PNG"/>
+
+---
+
+
+# Less friendly csvs
+
+<img class="center" src="img/session06/beds-data-wizard-2.png"/>
+
+---
+
+# Less friendly csvs
+
+Note you will have to move the cursor to another area for the number to have an effect.
+
+<img class="center" src="img/session06/beds-data-wizard-skip.PNG"/>
+
+---
+
+# Less friendly csvs
+
+<img class="center" src="img/session06/beds-data-wizard-date.png"/>
+
+---
+
+# Less friendly csvs
+
+<img class="center" src="img/session06/beds-data-date-wizard.PNG"/>
+
+---
+
+# Look at the data
+
+This is real data so there are real issues (which we'll work with)
+
+```{r echo=FALSE, eval=TRUE}
+
+kableExtra::kbl(head(beds_data))
+```
 
 ---
 
