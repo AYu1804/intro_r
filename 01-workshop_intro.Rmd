@@ -58,15 +58,16 @@ class: center, middle
 Using R Studio <br/>
 <br/> Importing data <br/>
 <br/> --------- Break --------- <br/>
-<br/> Introduction to ggplot2 <br/>
-<br/> What does this function do? <br/>
-<br/> --------- Lunch ----------- <br/>
 <br/> Data wrangling with dplyr <br/>
+<br/> --------- Break --------- <br/>
 <br/> Naming objects | Relational data <br/>
+<br/> --------- Day 2 ----------- <br/>
+<br/> Finding guidance and best practices <br/>
+<br/> Introduction to ggplot2 <br/>
 <br/> --------- Break --------- <br/>
 <br/> R Markdown <br/>
 <br/> Ongoing learning <br/>
-<br/> .green[Finish about 4 - 430pm] <br/>
+<br/> .green[Finish] <br/>
 
 ---
 
